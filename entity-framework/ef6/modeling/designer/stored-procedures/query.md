@@ -1,20 +1,14 @@
 ---
 title: 设计器的查询存储过程-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 9554ed25-c5c1-43be-acad-5da37739697f
-caps.latest.revision: 3
-ms.openlocfilehash: a08c1afc02266b35372a49fca1e829963e4785b2
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 04478ea1c8cd43a7ba4ee788e464992af3de7f64
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120084"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46283896"
 ---
 # <a name="designer-query-stored-procedures"></a>设计器的查询存储过程
 此分步演练演示如何使用实体框架设计器 （EF 设计器） 导入存储的过程转换为模型，然后调用导入的存储的过程来检索结果。 
@@ -106,4 +100,4 @@ The department name is Engineering
 <a name="output-parameters"></a>输出参数
 -----------------
 
-如果使用输出参数，其值将不可用，直到已完全读取结果。 这是由于 DbDataReader 的基础行为，请参阅[使用 DataReader 检索数据](http://go.microsoft.com/fwlink/?LinkID=398589)的更多详细信息。
+如果使用输出参数，其值将不可用，直到已完全读取结果。 这是由于 DbDataReader 的基础行为，请参阅[使用 DataReader 检索数据](https://go.microsoft.com/fwlink/?LinkID=398589)的更多详细信息。

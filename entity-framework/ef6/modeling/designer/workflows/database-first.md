@@ -1,20 +1,14 @@
 ---
 title: 数据库优先的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: cc6ffdb3-388d-4e79-a201-01ec2577c949
-caps.latest.revision: 3
-ms.openlocfilehash: 17bba5fe9883a1bee0f8b9624dfa35da889e6005
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: c81025fe7c3ad6398f003f7be2a3f9f072eec327
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119988"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46284078"
 ---
 # <a name="database-first"></a>数据库优先
 此视频和分步演练会提供使用 Entity Framework 数据库优先开发的简介。 数据库第一次可以进行反向工程，从现有数据库的模型。 模型存储在 EDMX 文件 （扩展名为.edmx） 并可以查看和编辑实体框架设计器中。 从 EDMX 文件自动生成与交互应用程序中的类。
@@ -24,13 +18,13 @@ ms.locfileid: "39119988"
 
 **主讲人**：[Rowan Miller](http://romiller.com/)
 
-**视频**: [WMV](http://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-winvideo-databasefirst.wmv) | [MP4](http://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-mp4video-databasefirst.m4v) | [WMV (ZIP)](http://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-winvideo-databasefirst.zip)
+**视频**: [WMV](https://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-winvideo-databasefirst.wmv) | [MP4](https://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-mp4video-databasefirst.m4v) | [WMV (ZIP)](https://download.microsoft.com/download/8/F/0/8F0B5F63-4939-4DC8-A726-FF139B37F8D8/HDI-ITPro-MSDN-winvideo-databasefirst.zip)
 
 ## <a name="pre-requisites"></a>系统必备组件
 
 将需要安装最低版本为 Visual Studio 2010 或 Visual Studio 2012 安装来完成本演练。
 
-如果使用 Visual Studio 2010，您还需要具有[NuGet](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)安装。
+如果使用 Visual Studio 2010，您还需要具有[NuGet](https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)安装。
 
  
 
@@ -52,17 +46,17 @@ ms.locfileid: "39119988"
 -   右键单击**数据连接-&gt;添加连接...**
 -   如果你尚未连接到数据库服务器资源管理器之前将需要选择 Microsoft SQL Server 作为数据源
 
-    ![SelectDataSource](~/ef6/media/selectdatasource.png)
+    ![选择数据源](~/ef6/media/selectdatasource.png)
 
 -   连接到 LocalDB 或 SQL Express，具体取决于哪一个已安装，并输入**DatabaseFirst.Blogging**作为数据库名称
 
-    ![SqlExpressConnectionDF](~/ef6/media/sqlexpressconnectiondf.png)
+    ![Sql Express 连接 DF](~/ef6/media/sqlexpressconnectiondf.png)
 
-    ![LocalDBConnectionDF](~/ef6/media/localdbconnectiondf.png)
+    ![LocalDB 连接 DF](~/ef6/media/localdbconnectiondf.png)
 
 -   选择**确定**并将你想要创建新数据库，请选择要求你**是**
 
-    ![CreateDatabaseDialog](~/ef6/media/createdatabasedialog.png)
+    ![创建数据库对话框](~/ef6/media/createdatabasedialog.png)
 
 -   新数据库现在将出现在服务器资源管理器，右键单击它并选择**新查询**
 -   将下面的 SQL 复制到新的查询，然后右键单击查询并选择**Execute**
@@ -107,21 +101,21 @@ CREATE TABLE [dbo].[Posts] (
 -   这将启动**实体数据模型向导**
 -   选择**从数据库生成**单击**下一步**
 
-    ![WizardStep1](~/ef6/media/wizardstep1.png)
+    ![向导步骤 1](~/ef6/media/wizardstep1.png)
 
 -   选择连接到第一个部分中创建的数据库中，输入**bloggingcontext**作为名称的连接字符串和单击**下一步**
 
-    ![WizardStep2](~/ef6/media/wizardstep2.png)
+    ![向导步骤 2](~/ef6/media/wizardstep2.png)
 
 -   单击表导入的所有表并单击完成旁边的复选框
 
-    ![WizardStep3](~/ef6/media/wizardstep3.png)
+    ![向导步骤 3](~/ef6/media/wizardstep3.png)
 
  
 
 反向工程过程完成后的新模型添加到你的项目，并打开，以便在实体框架设计器中查看。 此外具有已 App.config 文件添加到你的项目数据库的连接详细信息。
 
-![ModelInitial](~/ef6/media/modelinitial.png)
+![初始的模型](~/ef6/media/modelinitial.png)
 
 ### <a name="additional-steps-in-visual-studio-2010"></a>Visual Studio 2010 中的其他步骤
 
@@ -130,7 +124,7 @@ CREATE TABLE [dbo].[Posts] (
 首先，我们需要从 NuGet 获取实体框架的最新版本。
 
 -   **项目 –&gt;管理 NuGet 包...** 
-    *如果你没有**管理 NuGet 包...** 选项应该安装[最新版本的 NuGet](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)*
+    *如果你没有**管理 NuGet 包...** 选项应该安装[最新版本的 NuGet](https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)*
 -   选择**Online**选项卡
 -   选择**EntityFramework**包
 -   单击**安装**
@@ -141,7 +135,7 @@ CREATE TABLE [dbo].[Posts] (
 -   选择**联机模板**从左侧的菜单并搜索**DbContext**
 -   选择 EF **5.x DbContext 生成器 C\#**，输入**BloggingModel**作为名称，然后单击**添加**
 
-    ![DbContextTemplate](~/ef6/media/dbcontexttemplate.png)
+    ![DbContext 模板](~/ef6/media/dbcontexttemplate.png)
 
  
 
@@ -151,7 +145,7 @@ CREATE TABLE [dbo].[Posts] (
 
 *此屏幕截图取自 Visual Studio 2012 中，如果您使用的 Visual Studio 2010 BloggingModel.tt 并 BloggingModel.Context.tt 文件将直接位于你的项目而不是嵌套在 EDMX 文件下。*
 
-![GeneratedClassesDF](~/ef6/media/generatedclassesdf.png)
+![生成的类 DF](~/ef6/media/generatedclassesdf.png)
 
  
 
@@ -223,7 +217,7 @@ CREATE TABLE [dbo].[Users]
 -   在更新向导检查表旁边的框的添加选项卡上，这表示我们想要从架构中添加任何新表。
     *刷新选项卡显示在更新期间将检查其进行更改的模型中的任何现有的表。删除选项卡显示已从架构中删除，并且将还在从模型期间删除更新的任何表。这两个选项卡上的信息自动检测并提供仅供参考之用，无法更改任何设置。*
 
-    ![RefreshWizard](~/ef6/media/refreshwizard.png)
+    ![刷新向导](~/ef6/media/refreshwizard.png)
 
 -   单击完成上更新向导
 
@@ -231,7 +225,7 @@ CREATE TABLE [dbo].[Users]
 
 模型现在更新以包括新的用户实体映射到我们添加到数据库的用户表。
 
-![ModelUpdated](~/ef6/media/modelupdated.png)
+![模型更新](~/ef6/media/modelupdated.png)
 
 ## <a name="summary"></a>总结
 

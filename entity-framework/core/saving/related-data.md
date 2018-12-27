@@ -1,17 +1,15 @@
 ---
 title: 保存相关数据 - EF Core
 author: rowanmiller
-ms.author: divega
 ms.date: 10/27/2016
 ms.assetid: 07b6680f-ffcf-412c-9857-f997486b386c
-ms.technology: entity-framework-core
 uid: core/saving/related-data
-ms.openlocfilehash: b0ed25267c85e82db18d8a89693b6040db7e4b34
-ms.sourcegitcommit: 4997314356118d0d97b04ad82e433e49bb9420a2
+ms.openlocfilehash: 7349c57c0dccd3c911178641d3b34a478a4f6194
+ms.sourcegitcommit: dadee5905ada9ecdbae28363a682950383ce3e10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31006645"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "42994739"
 ---
 # <a name="saving-related-data"></a>保存相关数据
 
@@ -24,7 +22,7 @@ ms.locfileid: "31006645"
 
 如果创建多个新的相关实体，则将其中一个添加到上下文时也会添加其他实体。
 
-在下面的示例中，博客和三个相关文章会全部插入到数据库中。 找到并添加这些文章，因为它们可以通过 `Blog.Posts` 导航属性访问。
+在下面的示例中，博客和三篇相关文章将全部被插入数据库中。 由于可通过 `Blog.Posts` 导航属性访问这些文章，因此可发现并添加它们。
 
 [!code-csharp[Main](../../../samples/core/Saving/Saving/RelatedData/Sample.cs#AddingGraphOfEntities)]
 
@@ -43,7 +41,7 @@ ms.locfileid: "31006645"
 
 如果更改实体的导航属性，则将对数据库中的外键列进行相应的更改。
 
-在下面的示例中，`post` 实体更新为属于新的 `blog` 实体，因为其 `Blog` 导航属性设置为指向 `blog`。 请注意，`blog` 也会插入到数据库中，因为它是已由上下文 (`post`) 跟踪的实体的导航属性引用的新实体。
+在下面的示例中，`post` 实体更新为属于新的 `blog` 实体，因为其 `Blog` 导航属性设置为指向 `blog`。 请注意，`blog` 也会插入到数据库中，因为它是已由上下文跟踪的实体 (`post`) 的导航属性引用的新实体。
 
 [!code-csharp[Main](../../../samples/core/Saving/Saving/RelatedData/Sample.cs#ChangingRelationships)]
 
@@ -59,6 +57,6 @@ ms.locfileid: "31006645"
 
 有关级联删除行为的工作原理、如何显式配置这些行为以及如何按照约定选择这些行为的详细信息，请参阅[级联删除](cascade-delete.md)。
 
-在下面的示例中，将在 `Blog` 和 `Post` 之间的关系上配置级联删除，以便从数据库中删除 `post` 实体。
+在下面的示例中，对 `Blog` 和 `Post` 之间的关系配置了级联删除，因此将从数据库中删除 `post` 实体。
 
 [!code-csharp[Main](../../../samples/core/Saving/Saving/RelatedData/Sample.cs#RemovingRelationships)]

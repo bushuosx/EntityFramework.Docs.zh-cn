@@ -1,20 +1,14 @@
 ---
 title: 使用现有的数据库的 EF6 code First 迁移
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: f0cc4f93-67dd-4664-9753-0a9f913814db
-caps.latest.revision: 3
-ms.openlocfilehash: 77e139a29bb4708b00fc6198a57780ce75197252
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: 77370ec7d922b8324b924a0b4aca3e58f5ec6066
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120561"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490566"
 ---
 # <a name="code-first-migrations-with-an-existing-database"></a>现有数据库使用 code First 迁移
 > [!NOTE]

@@ -1,20 +1,14 @@
 ---
 title: 加载相关实体的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: c8417e18-a2ee-499c-9ce9-2a48cc5b468a
-caps.latest.revision: 3
-ms.openlocfilehash: e7adc9aea11a7a8e9b87b4f9e9120aa7316588db
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 2d33d9db8acc61f7d556e3eca46b1ea90198723e
+ms.sourcegitcommit: 15022dd06d919c29b1189c82611ea32f9fdc6617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120086"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47415752"
 ---
 # <a name="loading-related-entities"></a>加载相关的实体
 Entity Framework 支持三种方法来加载相关的数据的预先加载、 延迟加载和显式加载。 本主题所介绍的方法同样适用于查询使用 Code First 和 EF 设计器创建的模型。  
@@ -28,27 +22,27 @@ using (var context = new BloggingContext())
 {
     // Load all blogs and related posts
     var blogs1 = context.Blogs
-                          .Include(b => b.Posts)
-                          .ToList();
+                        .Include(b => b.Posts)
+                        .ToList();
 
     // Load one blogs and its related posts
     var blog1 = context.Blogs
-                        .Where(b => b.Name == "ADO.NET Blog")
-                        .Include(b => b.Posts)
-                        .FirstOrDefault();
+                       .Where(b => b.Name == "ADO.NET Blog")
+                       .Include(b => b.Posts)
+                       .FirstOrDefault();
 
     // Load all blogs and related posts  
     // using a string to specify the relationship
     var blogs2 = context.Blogs
-                          .Include("Posts")
-                          .ToList();
+                        .Include("Posts")
+                        .ToList();
 
     // Load one blog and its related posts  
     // using a string to specify the relationship
     var blog2 = context.Blogs
-                        .Where(b => b.Name == "ADO.NET Blog")
-                        .Include("Posts")
-                        .FirstOrDefault();
+                       .Where(b => b.Name == "ADO.NET Blog")
+                       .Include("Posts")
+                       .FirstOrDefault();
 }
 ```  
 
@@ -63,10 +57,10 @@ using (var context = new BloggingContext())
 {
     // Load all blogs, all related posts, and all related comments
     var blogs1 = context.Blogs
-                       .Include(b => b.Posts.Select(p => p.Comments))
-                       .ToList();
+                        .Include(b => b.Posts.Select(p => p.Comments))
+                        .ToList();
 
-    // Load all users their related profiles, and related avatar
+    // Load all users, their related profiles, and related avatar
     var users1 = context.Users
                         .Include(u => u.Profile.Avatar)
                         .ToList();
@@ -74,10 +68,10 @@ using (var context = new BloggingContext())
     // Load all blogs, all related posts, and all related comments  
     // using a string to specify the relationships
     var blogs2 = context.Blogs
-                       .Include("Posts.Comments")
-                       .ToList();
+                        .Include("Posts.Comments")
+                        .ToList();
 
-    // Load all users their related profiles, and related avatar  
+    // Load all users, their related profiles, and related avatar  
     // using a string to specify the relationships
     var users2 = context.Users
                         .Include("Profile.Avatar")
@@ -180,18 +174,18 @@ using (var context = new BloggingContext())
 
     // Load the posts with the 'entity-framework' tag related to a given blog
     context.Entry(blog)
-        .Collection(b => b.Posts)
-        .Query()
-        .Where(p => p.Tags.Contains("entity-framework")
-        .Load();
+           .Collection(b => b.Posts)
+           .Query()
+           .Where(p => p.Tags.Contains("entity-framework"))
+           .Load();
 
     // Load the posts with the 'entity-framework' tag related to a given blog  
     // using a string to specify the relationship  
     context.Entry(blog)
-        .Collection("Posts")
-        .Query()
-        .Where(p => p.Tags.Contains("entity-framework")
-        .Load();
+           .Collection("Posts")
+           .Query()
+           .Where(p => p.Tags.Contains("entity-framework"))
+           .Load();
 }
 ```  
 
@@ -210,8 +204,8 @@ using (var context = new BloggingContext())
 
     // Count how many posts the blog has  
     var postCount = context.Entry(blog)
-                          .Collection(b => b.Posts)
-                          .Query()
-                          .Count();
+                           .Collection(b => b.Posts)
+                           .Query()
+                           .Count();
 }
 ```  

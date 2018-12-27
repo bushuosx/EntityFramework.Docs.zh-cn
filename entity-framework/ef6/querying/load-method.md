@@ -1,20 +1,14 @@
 ---
 title: Load 方法的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 03c5a069-b7b4-455f-a16f-ee3b96cc4e28
-caps.latest.revision: 3
-ms.openlocfilehash: 83af79220b52de6e3063868fd9bdac56867d49cb
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: bcea8ab2477f44281cd5de824457a72a84ccc766
+ms.sourcegitcommit: 4a795285004612ac03ab26532ac09ca333cb4c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120085"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50123812"
 ---
 # <a name="the-load-method"></a>加载方法
 有几种方案，你可能想要实体从数据库加载到上下文中而无需立即执行与这些实体的任何内容。 很好的例子加载实体，可用于数据绑定，如中所述[本地数据](~/ef6/querying/local-data.md)。 一种常用的方式来执行此操作是编写 LINQ 查询，然后对它，只是为了立即放弃创建的列表调用 ToList。 Load 扩展方法工作方式相似 ToList，不同之处在于它完全避免了列表的创建。  
@@ -46,7 +40,7 @@ using (var context = new BloggingContext())
     context.Entry(blog)
         .Collection(b => b.Posts)
         .Query()
-        .Where(p => p.Tags.Contains("entity-framework")
+        .Where(p => p.Tags.Contains("entity-framework"))
         .Load();
 }
 ```  

@@ -1,20 +1,14 @@
 ---
 title: 代码优先的现有数据库-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: a7e60b74-973d-4480-868f-500a3899932e
-caps.latest.revision: 3
-ms.openlocfilehash: 47581a7ae9ff534d26ce82365bcbe2b254247495
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: f05420beb3dff2d632151fcbf48986b0d9cd18ff
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120079"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490605"
 ---
 # <a name="code-first-to-an-existing-database"></a>代码优先的现有数据库
 此视频和分步演练会提供面向现有数据库的代码优先开发的简介。 代码首先允许你定义使用 C 模型\#或 VB.Net 类。 可使用特性在类和属性，或使用 fluent API 执行可选的其他配置。
@@ -39,15 +33,15 @@ ms.locfileid: "39120079"
 -   右键单击**数据连接-&gt;添加连接...**
 -   如果尚未连接到将数据库从**服务器资源管理器**将需要选择之前**Microsoft SQL Server**作为数据源
 
-    ![SelectDataSource](~/ef6/media/selectdatasource.png)
+    ![选择数据源](~/ef6/media/selectdatasource.png)
 
 -   连接到 LocalDB 实例，并输入**博客**作为数据库名称
 
-    ![LocalDBConnection](~/ef6/media/localdbconnection.png)
+    ![LocalDB 连接](~/ef6/media/localdbconnection.png)
 
 -   选择**确定**并将你想要创建新数据库，请选择要求你**是**
 
-    ![CreateDatabaseDialog](~/ef6/media/createdatabasedialog.png)
+    ![创建数据库对话框](~/ef6/media/createdatabasedialog.png)
 
 -   新数据库现在将出现在服务器资源管理器，右键单击它并选择**新查询**
 -   将下面的 SQL 复制到新的查询，然后右键单击查询并选择**Execute**
@@ -98,15 +92,15 @@ VALUES ('.NET Framework Blog', 'http://blogs.msdn.com/dotnet/')
 -   这将启动**实体数据模型向导**
 -   选择**从数据库 Code First**单击**下一步**
 
-    ![WizardOneCFE](~/ef6/media/wizardonecfe.png)
+    ![向导一个 CFE](~/ef6/media/wizardonecfe.png)
 
 -   选择第一个部分中创建的数据库的连接，然后单击**下一步**
 
-    ![WizardTwoCFE](~/ef6/media/wizardtwocfe.png)
+    ![向导两个 CFE](~/ef6/media/wizardtwocfe.png)
 
 -   单击复选框旁边**表**导入的所有表并单击**完成**
 
-    ![WizardThreeCFE](~/ef6/media/wizardthreecfe.png)
+    ![向导三个 CFE](~/ef6/media/wizardthreecfe.png)
 
 反向工程过程完成的项目数后将已添加到项目中，让我们看看添加的内容。
 

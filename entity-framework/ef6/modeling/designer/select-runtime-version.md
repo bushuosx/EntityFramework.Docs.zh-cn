@@ -1,20 +1,14 @@
 ---
 title: 选择 EF 设计器模型的 EF6 的 Entity Framework 运行时版本
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 7ace90a6-46f8-4f55-a88c-7cad9620085c
-caps.latest.revision: 3
-ms.openlocfilehash: 75f7b4ed81528683801893c31de490ce15be6733
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: 40ad05c1f015e6a51150d04eee8d9aa581d72c33
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120481"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45488486"
 ---
 # <a name="selecting-entity-framework-runtime-version-for-ef-designer-models"></a>选择实体框架运行时版本的 EF 设计器模型
 > [!NOTE]

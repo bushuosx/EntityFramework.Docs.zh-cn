@@ -1,20 +1,14 @@
 ---
 title: 实体框架的 EF6 的案例研究
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: cd5d3ae3-717d-4095-a2ef-0e8fd72b1a2f
-caps.latest.revision: 3
-ms.openlocfilehash: 27c911799f957dd81a1866a3fd49e7f6cfa0059b
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: d7982a3f89ac1e57b48039d828f287adf6dc5068
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120488"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490867"
 ---
 # <a name="microsoft-case-studies-for-entity-framework"></a>用于实体框架的 Microsoft 案例研究
 案例研究此页上突出显示采用了实体框架的几个实际生产项目。

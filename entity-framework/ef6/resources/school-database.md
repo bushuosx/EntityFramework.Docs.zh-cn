@@ -1,20 +1,14 @@
 ---
 title: School 示例数据库的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: e83a6a06-e63b-4530-8656-614bf609b12b
-caps.latest.revision: 3
-ms.openlocfilehash: 736b7a3a44f2efe94818ac4edddcf4be777698ed
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 1e9dc98edb8590021bbf3393e9edda1929d505e0
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119967"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490709"
 ---
 # <a name="school-sample-database"></a>School 示例数据库
 本主题包含的架构和 School 数据库的数据。 School 示例数据库中的实体框架文档的各个位置使用。  

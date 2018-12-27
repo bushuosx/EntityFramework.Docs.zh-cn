@@ -1,20 +1,14 @@
 ---
 title: Fluent API 的配置和映射属性和类型的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 648ed274-c501-4630-88e0-d728ab5c4057
-caps.latest.revision: 3
-ms.openlocfilehash: ec8b484433d13899a88f44e37823dd1a4bed6530
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: 7371cc99142ccf8fc6bea237d7d58d1e67fcecec
+ms.sourcegitcommit: 75f8a179ac9a70ad390fc7ab2a6c5e714e701b8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120485"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339798"
 ---
 # <a name="fluent-api---configuring-and-mapping-properties-and-types"></a>Fluent API-配置和映射属性和类型
 使用 Entity Framework Code First 时的默认行为是将您的 POCO 类映射到表使用一系列融入 EF 的约定。 有时，但是，您无法或不希望遵循这些约定，并且需要将实体映射到以外的约定的规定。  
@@ -30,7 +24,7 @@ Code first fluent API 最常访问通过重写[OnModelCreating](https://msdn.mic
 从 EF6 您可以使用 HasDefaultSchema 方法上 DbModelBuilder 来指定要使用的所有表、 存储的过程等的数据库架构。此默认设置将被重写的任何对象的显式配置为不同的架构。  
 
 ``` csharp
-modelBuilder.HasDefaultSchema(“sales”);
+modelBuilder.HasDefaultSchema("sales");
 ```  
 
 ### <a name="custom-conventions-ef6-onwards"></a>自定义约定 (EF6 及更高版本)  

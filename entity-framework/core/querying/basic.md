@@ -1,17 +1,15 @@
 ---
 title: 基本查询 - EF Core
 author: rowanmiller
-ms.author: divega
 ms.date: 10/27/2016
 ms.assetid: ab6e35f1-397f-41c0-9ef4-85aec5466377
-ms.technology: entity-framework-core
 uid: core/querying/basic
-ms.openlocfilehash: 5070faf2aeeffad680e24e7de5a0ffa03a8f0064
-ms.sourcegitcommit: 01a75cd483c1943ddd6f82af971f07abde20912e
+ms.openlocfilehash: 6a381f419cb0958ea0835070e22fe7a3212457d7
+ms.sourcegitcommit: dadee5905ada9ecdbae28363a682950383ce3e10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "26052547"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "42993700"
 ---
 # <a name="basic-queries"></a>基本查询
 

@@ -1,20 +1,14 @@
 ---
 title: 关系、 导航属性和外键的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 8a21ae73-6d9b-4b50-838a-ec1fddffcf37
-caps.latest.revision: 3
-ms.openlocfilehash: 28dab25c7d19a117e594b1761f7bc745b684f7b3
-ms.sourcegitcommit: 5c2634c546720902fe01935f4fc031d73aa3ebde
+ms.openlocfilehash: 46c2d11b5704ec7ae82a423ae042b87f5efe436f
+ms.sourcegitcommit: 8b42045cd21f80f425a92f5e4e9dd4972a31720b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39393758"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315654"
 ---
 # <a name="relationships-navigation-properties-and-foreign-keys"></a>关系、 导航属性和外键
 本主题概述了的实体框架如何管理实体之间的关系。 它还提供有关如何将映射和操作关系的一些指导。
@@ -25,7 +19,7 @@ ms.locfileid: "39393758"
 
 下图显示一个对多关系中两个参与的表。 **课程**表是相关的表，因为它包含**DepartmentID**其链接到的列**部门**表。
 
-![数据库 2](~/ef6/media/database2.png)
+![部门和 Course 表](~/ef6/media/database2.png)
 
 在实体框架中，实体可以与其他实体通过关联或关系。 每个关系包含两个端点，用于描述实体类型和在该关系中的两个实体类型 （一个、 零或一个或许多） 的重数。 此关系可能会受引用约束，其中描述了关系中的哪一端为 principal role 以及哪一个是从属角色。
 
@@ -39,7 +33,7 @@ ms.locfileid: "39393758"
 
 下图显示了使用实体框架设计器创建的概念模型。 该模型包含两个参与对多关系的实体。 这两个实体都具有导航属性。 **课程**，且是 depend 实体**DepartmentID**定义的外键属性。
 
-![RelationshipEFDesigner](~/ef6/media/relationshipefdesigner.png)
+![具有导航属性的部门和 Course 表](~/ef6/media/relationshipefdesigner.png)
 
 以下代码片段显示使用 Code First 创建的相同模型。
 
@@ -77,59 +71,60 @@ public class Department
 
 ## <a name="creating-and-modifying-relationships"></a>创建和修改关系
 
-在中*外键关联*，当更改关系后，状态将更改为 EntityState.Modified EntityState.Unchanged 具有的依赖对象的状态。 在独立关系中，更改该关系不会更新依赖对象的状态。
+在中*外键关联*，当更改关系后，具有的依赖对象的状态`EntityState.Unchanged`的状态更改为`EntityState.Modified`。 在独立关系中，更改该关系不会更新依赖对象的状态。
 
 以下示例演示如何使用外键属性和导航属性关联相关的对象。 通过外键关联，可以使用任一方法来更改、 创建或修改关系。 使用独立关联，则不能使用外键属性。
 
--   通过将新值分配给外键属性，如以下示例所示。  
-    ``` csharp
-    course.DepartmentID = newCourse.DepartmentID;
-    ```
+- 通过将新值分配给外键属性，如以下示例所示。  
+  ``` csharp
+  course.DepartmentID = newCourse.DepartmentID;
+  ```
 
--   下面的代码中删除通过外键设置为一种关系**null**。 请注意外, 键属性必须是可以为 null。  
-    ``` csharp
-    course.DepartmentID = null;
-    ```  
-    >[!NOTE]
-    > 如果引用处于已添加状态 （在此示例中，课程对象），引用导航属性将不同步新的对象的键值，直到调用 SaveChanges。 由于对象上下文在键值保存前不包含已添加对象的永久键，因此不发生同步。 如果你必须拥有新对象进行完全同步设置关系一样，使用以下 methods.* 之一
+- 下面的代码中删除通过外键设置为一种关系**null**。 请注意外, 键属性必须是可以为 null。  
+  ``` csharp
+  course.DepartmentID = null;
+  ```
 
--   通过将一个新对象分配给导航属性。 以下代码将创建一门课程之间的关系和`department`。 如果这些对象附加到上下文中，`course`还将添加到`department.Courses`集合，并且对应的外键属性上`course`对象设置为部门的键属性值。  
-    ``` csharp
-    course.Department = department;
-    ```
+  >[!NOTE]
+  > 如果引用处于已添加状态 （在此示例中，课程对象），引用导航属性将不同步新的对象的键值，直到调用 SaveChanges。 由于对象上下文在键值保存前不包含已添加对象的永久键，因此不发生同步。 如果你必须拥有新对象进行完全同步设置关系一样，使用以下 methods.* 之一
 
- -   若要删除此关系，请将导航属性设置为`null`。 如果您正在使用实体框架，基于.NET 4.0，相关的端需要在加载之前将其设置为 null。 例如：  
-    ``` chsarp
-    context.Entry(course).Reference(c => c.Department).Load();  
-    course.Department = null;
-    ```  
-    从实体框架 5.0，基于.NET 4.5，可以设置为 null 关系而不加载相关的端。 此外可以设置的当前值为 null，使用以下方法。  
-    ``` csharp
-    context.Entry(course).Reference(c => c.Department).CurrentValue = null;
-    ```
+- 通过将一个新对象分配给导航属性。 以下代码将创建一门课程之间的关系和`department`。 如果这些对象附加到上下文中，`course`还将添加到`department.Courses`集合，并且对应的外键属性上`course`对象设置为部门的键属性值。  
+  ``` csharp
+  course.Department = department;
+  ```
 
--   通过在实体集合中删除或添加对象。 例如，可以添加类型的对象`Course`到`department.Courses`集合。 此操作将创建特定之间的关系**课程**和特定`department`。 如果对象附加到上下文、 部门引用和外键属性上**课程**对象将被设置为相应`department`。  
-    ``` csharp
-    department.Courses.Add(newCourse);
-    ```
+- 若要删除此关系，请将导航属性设置为`null`。 如果您正在使用实体框架，基于.NET 4.0，相关的端需要在加载之前将其设置为 null。 例如：   
+  ``` csharp
+  context.Entry(course).Reference(c => c.Department).Load();
+  course.Department = null;
+  ```
+
+  从实体框架 5.0，基于.NET 4.5，可以设置为 null 关系而不加载相关的端。 此外可以设置的当前值为 null，使用以下方法。   
+  ``` csharp
+  context.Entry(course).Reference(c => c.Department).CurrentValue = null;
+  ```
+
+- 通过在实体集合中删除或添加对象。 例如，可以添加类型的对象`Course`到`department.Courses`集合。 此操作将创建特定之间的关系**课程**和特定`department`。 如果对象附加到上下文、 部门引用和外键属性上**课程**对象将被设置为相应`department`。  
+  ``` csharp
+  department.Courses.Add(newCourse);
+  ```
 
 - 通过使用`ChangeRelationshipState`方法以更改指定两个实体对象之间关系的状态。 使用 N 层应用程序时最常使用此方法和一个*独立关联*（与外键关联不能使用）。 此外，若要使用此方法必须删除直至`ObjectContext`，下面的示例中所示。  
 以下示例中，在没有讲师和课程之间的多对多关系。 调用`ChangeRelationshipState`方法并传入`EntityState.Added`参数，允许`SchoolContext`知道是否两个对象之间添加关系：
+  ``` csharp
 
-``` csharp
+  ((IObjectContextAdapter)context).ObjectContext.
+    ObjectStateManager.
+    ChangeRelationshipState(course, instructor, c => c.Instructor, EntityState.Added);
+  ```
 
-       ((IObjectContextAdapter)context).ObjectContext.
-                 ObjectStateManager.
-                  ChangeRelationshipState(course, instructor, c => c.Instructor, EntityState.Added);
-```
+  请注意，如果你要更新 （而不仅仅添加） 关系，您必须添加新后删除旧的关系：
 
-    Note that if you are updating (not just adding) a relationship, you must delete the old relationship after adding the new one:
-
-``` csharp
-       ((IObjectContextAdapter)context).ObjectContext.
-                  ObjectStateManager.
-                  ChangeRelationshipState(course, oldInstructor, c => c.Instructor, EntityState.Deleted);
-```
+  ``` csharp
+  ((IObjectContextAdapter)context).ObjectContext.
+    ObjectStateManager.
+    ChangeRelationshipState(course, oldInstructor, c => c.Instructor, EntityState.Deleted);
+  ```
 
 ## <a name="synchronizing-the-changes-between-the-foreign-keys-and-navigation-properties"></a>同步之间的外键和导航属性的更改
 
@@ -158,7 +153,7 @@ public class Department
 > 在外键关联中，加载依赖对象的相关端时，将会基于当前位于内存中的依赖对象的外键值加载相关对象：
 
 ``` csharp
-    // Get the course where currently DepartmentID = 1.
+    // Get the course where currently DepartmentID = 2.
     Course course2 = context.Courses.First(c=>c.DepartmentID == 2);
 
     // Use DepartmentID foreign key property

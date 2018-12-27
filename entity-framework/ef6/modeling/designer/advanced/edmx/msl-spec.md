@@ -1,20 +1,14 @@
 ---
 title: MSL 规范的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 13ae7bc1-74b4-4ee4-8d73-c337be841467
-caps.latest.revision: 4
-ms.openlocfilehash: 7448efc99f9fd9c6cdf930256a26347376fb354c
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 6bff1f5407bc0546e60b5bee1178be9aa4748bd8
+ms.sourcegitcommit: 29f928a6116771fe78f306846e6f2d45cbe8d1f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120348"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460132"
 ---
 # <a name="msl-specification"></a>MSL 规范
 映射规范语言 (MSL) 是一种基于 XML 的语言描述概念模型和实体框架应用程序的存储模型之间的映射。
@@ -225,7 +219,7 @@ MSL 的版本按 XML 命名空间进行区分。
      <ScalarProperty Name="CourseID" ColumnName="CourseID" />
    </EndProperty>
  </AssociationSetMapping>
-``` 
+```
 
 ## <a name="complexproperty-element-msl"></a>ComplexProperty 元素 (MSL)
 
@@ -988,7 +982,7 @@ ModificationFunctionMapping 子元素可用于映射插入、 更新或删除实
 
 **映射**以映射规范语言 （msl） 表示的元素包含对象 （如存储模型中所述） 到数据库的概念模型中定义的映射的信息。 有关详细信息，请参阅 CSDL 规范和 SSDL 规范。
 
-**映射**元素是映射规范的根元素。 映射规范的 XML 命名空间是http://schemas.microsoft.com/ado/2009/11/mapping/cs。
+**映射**元素是映射规范的根元素。 映射规范的 XML 命名空间是 http://schemas.microsoft.com/ado/2009/11/mapping/cs 。
 
 映射元素可以具有以下子元素（按所列顺序）：
 

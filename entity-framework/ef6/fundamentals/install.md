@@ -1,20 +1,14 @@
 ---
 title: 获取实体框架的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 122c38a2-f9e8-4ecc-9c72-a83bc9af7814
-caps.latest.revision: 4
-ms.openlocfilehash: 400bf1428e6754a88dbc1264c346bb66282725a0
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: 7f840a4f9e437ec12f699184339e386976e1528b
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120553"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490623"
 ---
 # <a name="get-entity-framework"></a>获取实体框架
 实体框架的 Visual Studio 和 EF 运行时由组成的 EF 工具。
@@ -33,7 +27,7 @@ ms.locfileid: "39120553"
 
 可以通过右键单击安装 EntityFramework 包**引用**项目文件夹并选择**管理 NuGet 包...**
 
-![ManageNuGetPackages](~/ef6/media/managenugetpackages.png)
+![管理 NuGet 包](~/ef6/media/managenugetpackages.png)
 
 ### <a name="installing-from-package-manager-console"></a>从包管理器控制台安装
 
@@ -45,7 +39,7 @@ Install-Package EntityFramework
 
 ## <a name="installing-a-specific-version-of-ef"></a>安装特定版本的 EF
 
-从 EF 4.1 及更高版本，已作为发布新版本的 EF 运行时[EntityFramework NuGet 包内](https://www.nuget.org/packages/EntityFramework/)。 任何这些版本可以向基于.NET Framework 的项目添加，通过在 Visual Studio 中运行以下命令[程序包管理器控制台](http://docs.nuget.org/docs/start-here/using-the-package-manager-console):
+从 EF 4.1 及更高版本，已作为发布新版本的 EF 运行时[EntityFramework NuGet 包](https://www.nuget.org/packages/EntityFramework/)。 任何这些版本可以向基于.NET Framework 的项目添加，通过在 Visual Studio 中运行以下命令[程序包管理器控制台](http://docs.nuget.org/docs/start-here/using-the-package-manager-console):
 
 ``` powershell
 Install-Package EntityFramework -Version <number>
@@ -61,7 +55,7 @@ EF 4.1 之前的运行时是.NET Framework 的一部分，并且不能单独安�
 
 若要安装的 EntityFramework 可以选择最新预览版**包括预发行版**管理 NuGet 包窗口中。 如果不有任何预发布版本将自动获取最新的实体框架的完全受支持的版本。
 
-![IncludePreRelease](~/ef6/media/includeprerelease.png)
+![包括预发行版](~/ef6/media/includeprerelease.png)
 
 或者，可以运行以下命令[程序包管理器控制台](http://docs.nuget.org/docs/start-here/using-the-package-manager-console)。
 

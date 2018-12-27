@@ -1,20 +1,14 @@
 ---
 title: 定义查询的 EF 设计器-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: e52a297e-85aa-42f6-a922-ba960f8a4b22
-caps.latest.revision: 3
-ms.openlocfilehash: 593fb9925a7a0b59a69b8c8dc4846640627756aa
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: b1589dc12ccb50754c2e950932a2d82bc4869f6b
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120077"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489467"
 ---
 # <a name="defining-query---ef-designer"></a>定义查询的 EF 设计器
 本演练演示如何添加定义查询和相应的实体类型到使用 EF 设计器的模型。 定义查询通常用于提供类似于数据库视图，由提供的功能，但该视图定义在模型中，不是数据库。 定义查询，你可以执行 SQL 语句中指定**DefiningQuery** .edmx 文件的元素。 有关详细信息，请参阅**DefiningQuery**中[SSDL 规范](~/ef6/modeling/designer/advanced/edmx/ssdl-spec.md)。
@@ -60,11 +54,11 @@ ms.locfileid: "39120077"
 -   在解决方案资源管理器中右键单击**DefiningQueryModel.edmx**文件，然后选择**打开方式...**.
 -   选择**XML （文本） 编辑器**。
 
-    ![XMLEditor](~/ef6/media/xmleditor.png)
+    ![XML 编辑器](~/ef6/media/xmleditor.png)
 
 -   单击**是**如果系统提示并显示以下消息：
 
-    ![Warning2](~/ef6/media/warning2.png)
+    ![警告 2](~/ef6/media/warning2.png)
 
  
 
@@ -142,7 +136,7 @@ ms.locfileid: "39120077"
 -   双击 DefiningQueryModel.edmx。
 -   说**是**于以下消息：
 
-    ![Warning2](~/ef6/media/warning2.png)
+    ![警告 2](~/ef6/media/warning2.png)
 
  
 
@@ -178,7 +172,7 @@ ms.locfileid: "39120077"
     **映射详细信息**显示窗口。
 -   选择**GradeReport**从**&lt;添加表或视图&gt;** 下拉列表中 (位于**表**s)。  
     默认的概念之间的映射和存储**GradeReport**实体类型出现。  
-    ![MappingDetails3](~/ef6/media/mappingdetails.png)
+    ![映射 Details3](~/ef6/media/mappingdetails.png)
 
 因此， **EntitySetMapping**元素添加到.edmx 文件的映射部分。 
 

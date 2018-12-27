@@ -2,17 +2,15 @@
 layout: HubPage
 title: Entity Framework
 author: rowanmiller
-ms.topic: hub-page
-ms.author: divega
 ms.date: 10/27/2016
 ms.assetid: 6bb12583-c39a-454c-8d83-d2a2793ca9ef
 uid: index
-ms.openlocfilehash: 1f0e33e06f3b39f34eb483786cd34152a1570f54
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 2846545bdd7f29ba620592dacd288e3feb9ce6c4
+ms.sourcegitcommit: 064b09431f05848830e145a6cd65cad58881557c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "37911741"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52552563"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -278,7 +276,7 @@ ms.locfileid: "37911741"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/library/dn223258(v=vs.113).aspx">
+                                <a href="https://docs.microsoft.com/dotnet/api/?view=entity-framework-6.2.0">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

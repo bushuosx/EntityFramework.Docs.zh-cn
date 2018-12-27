@@ -1,23 +1,17 @@
 ---
 title: Code First 迁移 - EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 36591d8f-36e1-4835-8a51-90f34f633d1e
-caps.latest.revision: 3
-ms.openlocfilehash: 5c7431985e2e404060197615bf281fcf3b318403
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: f408ef861a2992783142fa1483d1433ca710399a
+ms.sourcegitcommit: 15022dd06d919c29b1189c82611ea32f9fdc6617
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37914279"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47415791"
 ---
 # <a name="code-first-migrations"></a>Code First 迁移
-如果正在使用 Code First 工作流，推荐使用 Code First 迁移改进应用程序的数据库架构。 迁移提供一组允许以下操作的工具：
+如果使用的是 Code First 工作流，推荐使用 Code First 迁移改进应用程序的数据库架构。 迁移提供一组允许以下操作的工具：
 
 1. 创建可用于 EF 模型的初始数据库
 2. 生成迁移以跟踪对 EF 模型所做的更改
@@ -90,7 +84,7 @@ ms.locfileid: "37914279"
 
 -   运行应用程序，随即会创建 MigrationsCodeDemo.BlogContext 数据库。
 
-    ![DatabaseLocalDB](~/ef6/media/databaselocaldb.png)
+    ![数据库  LocalDB](~/ef6/media/databaselocaldb.png)
 
 ## <a name="enabling-migrations"></a>启用迁移
 
@@ -102,7 +96,7 @@ ms.locfileid: "37914279"
     public string Url { get; set; }
 ```
 
-如果要再次运行应用程序，则会收到一个 InvalidOperationException，指出“创建数据库后，支持‘BlogContext’上下文的模型已发生变化。请考虑使用 Code First 迁移更新数据库 ([http://go.microsoft.com/fwlink/?LinkId=238269](http://go.microsoft.com/fwlink/?LinkId=238269))”。
+如果要再次运行应用程序，则会收到一个 InvalidOperationException，指出“创建数据库后，支持‘BlogContext’上下文的模型已发生变化。请考虑使用 Code First 迁移更新数据库 ([http://go.microsoft.com/fwlink/?LinkId=238269](https://go.microsoft.com/fwlink/?LinkId=238269))”。
 
 如异常情况所述，可开始使用 Code First 迁移。 第一步是启用上下文迁移。
 

@@ -1,20 +1,14 @@
 ---
 title: 代码的第一个 Insert、 Update 和 Delete 存储的过程-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 9a7ae7f9-4072-4843-877d-506dd7eef576
-caps.latest.revision: 3
-ms.openlocfilehash: 1f100ed888abd98df83c80d0de2086cfb1ba7b4f
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: bfc56671814aec1965ac054ff901297e5cdbbecb
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120552"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489617"
 ---
 # <a name="code-first-insert-update-and-delete-stored-procedures"></a>代码的第一个 Insert、 Update 和 Delete 存储的过程
 > [!NOTE]

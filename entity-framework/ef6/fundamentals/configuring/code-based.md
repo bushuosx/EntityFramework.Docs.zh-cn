@@ -1,20 +1,14 @@
 ---
 title: 基于代码的配置-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 13886d24-2c74-4a00-89eb-aa0dee328d83
-caps.latest.revision: 3
-ms.openlocfilehash: d6a33434e582fcd7ce756b447d7f2cbab4ca43ec
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: 7c7da8992fd1b29f998e08c13d445c1d2d8cc2ce
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120549"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490813"
 ---
 # <a name="code-based-configuration"></a>基于代码的配置
 > [!NOTE]

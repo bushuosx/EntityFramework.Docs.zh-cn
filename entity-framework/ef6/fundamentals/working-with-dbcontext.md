@@ -1,20 +1,14 @@
 ---
 title: 使用 DbContext 的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: b0e6bddc-8a87-4d51-b1cb-7756df938c23
-caps.latest.revision: 3
-ms.openlocfilehash: 865c9883ce25f405a173791df4e46b98550cd41f
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: d961ffd8bed7f5b2f82dcfa30fc0241b7437be50
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119971"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489058"
 ---
 # <a name="working-with-dbcontext"></a>使用 DbContext
 

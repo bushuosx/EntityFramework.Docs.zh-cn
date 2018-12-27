@@ -1,20 +1,14 @@
 ---
 title: 使用你自己的 test double 的 EF6 进行测试
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 16a8b7c0-2d23-47f4-9cc0-e2eb2e738ca3
-caps.latest.revision: 4
-ms.openlocfilehash: 4e2511f92f9bb034ab468dd030ef238e325ce7c0
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: 2158dc73585c2720e7293096b0478c73edf522d9
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120464"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490904"
 ---
 # <a name="testing-with-your-own-test-doubles"></a>使用你自己的 test double 进行测试
 > [!NOTE]

@@ -1,20 +1,14 @@
 ---
 title: 每个模型的 EF6 的多个关系图
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: b95db5c8-de8d-43bd-9ccc-5df6a5e25e1b
-caps.latest.revision: 3
-ms.openlocfilehash: 3a022b3e44ecd4b6b62224cb6494c794397a9739
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: e78b927a147143629ac5b73e23edf439ba6d0264
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120469"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46283610"
 ---
 # <a name="multiple-diagrams-per-model"></a>每个模型的多个关系图
 > [!NOTE]
@@ -29,7 +23,7 @@ ms.locfileid: "39120469"
 
 **主讲人**： 以下 Julia Kornich
 
-**视频**: [WMV](http://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-winvideo-multiplediagrams.wmv) | [MP4](http://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-mp4video-multiplediagrams.m4v) | [WMV (ZIP)](http://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-winvideo-multiplediagrams.zip)
+**视频**: [WMV](https://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-winvideo-multiplediagrams.wmv) | [MP4](https://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-mp4video-multiplediagrams.m4v) | [WMV (ZIP)](https://download.microsoft.com/download/5/C/2/5C2B52AB-5532-426F-B078-1E253341B5FA/HDI-ITPro-MSDN-winvideo-multiplediagrams.zip)
 
 ## <a name="ef-designer-overview"></a>EF 设计器概述
 
@@ -45,7 +39,7 @@ ms.locfileid: "39120469"
 
 以下屏幕截图显示了在 EF 设计器中打开.edmx 文件。 屏幕截图显示了可视化设计图面 （左侧） 和**模型浏览器**窗口 （右侧）。
 
-![EFDesigner2](~/ef6/media/efdesigner2.png)
+![EF 设计器 2](~/ef6/media/efdesigner2.png)
 
 若要撤消在 EF 设计器中完成的操作，请单击 Ctrl Z。
 

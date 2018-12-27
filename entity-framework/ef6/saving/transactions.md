@@ -1,20 +1,14 @@
 ---
 title: 使用事务-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 0d0f1824-d781-4cb3-8fda-b7eaefced1cd
-caps.latest.revision: 3
-ms.openlocfilehash: 4238c88cc149458ed11b96a0bf9aaed9aac40b2d
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: 7197733ab25c8475746e7863963384730919e3ff
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120569"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489773"
 ---
 # <a name="working-with-transactions"></a>使用事务
 > [!NOTE]
@@ -204,7 +198,7 @@ namespace TransactionsExamples
 
 ### <a name="connection-resiliency"></a>连接弹性  
 
-新的连接复原功能并不适用于用户启动事务。 有关详细信息，请参阅[重试执行策略限制](~/ef6/fundamentals/connection-resiliency/retry-logic.md#limitations)。  
+新的连接复原功能并不适用于用户启动事务。 有关详细信息，请参阅[重试执行策略](~/ef6/fundamentals/connection-resiliency/retry-logic.md#user-initiated-transactions-are-not-supported)。  
 
 ### <a name="asynchronous-programming"></a>异步编程  
 

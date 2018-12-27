@@ -1,20 +1,14 @@
 ---
 title: 设计器的表拆分的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 452f17c3-9f26-4de4-9894-8bc036e23b0f
-caps.latest.revision: 3
-ms.openlocfilehash: 6ecf9a77f7c6a743e3902de65bb75349c6ef799f
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 8b0ca6778a06ed43b1365d2e5969ff15948f8004
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119978"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490682"
 ---
 # <a name="designer-table-splitting"></a>设计器的表拆分
 本演练演示如何通过修改模型与实体框架设计器 （EF 设计器） 将多个实体类型映射到单个表。
@@ -23,7 +17,7 @@ ms.locfileid: "39119978"
 
 下图显示了使用 EF 设计器时使用的主窗口。
 
-![EFDesigner](~/ef6/media/efdesigner.png)
+![EF 设计器](~/ef6/media/efdesigner.png)
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -136,8 +130,8 @@ ms.locfileid: "39119978"
 
 -   以下**选择**因执行上下文执行。People.FirstOrDefault() 并选择只是列映射到**人员**
 
-    ![Select1](~/ef6/media/select1.png)
+    ![选择 1](~/ef6/media/select1.png)
 
 -   以下**选择**访问导航属性 existingPerson.Instructor 已执行与选择映射到列**HireInfo**
 
-    ![Select2](~/ef6/media/select2.png)
+    ![选择 2](~/ef6/media/select2.png)

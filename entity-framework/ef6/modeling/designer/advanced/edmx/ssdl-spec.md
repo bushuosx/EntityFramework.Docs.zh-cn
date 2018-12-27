@@ -1,20 +1,14 @@
 ---
 title: SSDL 规范的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: a4af4b1a-40f4-48cc-b2e0-fa8f5d9d5419
-caps.latest.revision: 3
-ms.openlocfilehash: a9977c80d9a9401afdcad2284a705bcb28790fb8
-ms.sourcegitcommit: 9ae4473425c5e76337c9d032b0e5dbfedf1fcf57
+ms.openlocfilehash: a8b1f844a34c44d283982a52cef3bf80afd7e679
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120540"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490345"
 ---
 # <a name="ssdl-specification"></a>SSDL 规范
 存储架构定义语言 (SSDL) 是一种基于 XML 的语言，用于描述实体框架应用程序的存储模型。
@@ -908,7 +902,7 @@ SSDL 关联集的 AssociationSetMapping 元素映射到 CSDL 关联集。 但是
 
 **架构**元素使用**Namespace**属性来定义存储模型中的实体类型和关联对象的命名空间。 在命名空间内，任何两个对象都不能同名。
 
-存储模型命名空间是不同的 XML 命名空间**架构**元素。 存储模型命名空间 (由定义**Namespace**属性) 是实体类型和关联类型的逻辑容器。 XML 命名空间 (由**xmlns**属性) 的**架构**元素是子元素和属性的默认命名空间**架构**元素。 窗体的 XML 命名空间http://schemas.microsoft.com/ado/YYYY/MM/edm/ssdl（其中 YYYY 和 MM 表示年和月分别） 是为 SSDL 保留。 自定义元素和特性不能位于具有此格式的命名空间中。
+存储模型命名空间是不同的 XML 命名空间**架构**元素。 存储模型命名空间 (由定义**Namespace**属性) 是实体类型和关联类型的逻辑容器。 XML 命名空间 (由**xmlns**属性) 的**架构**元素是子元素和属性的默认命名空间**架构**元素。 窗体的 XML 命名空间 http://schemas.microsoft.com/ado/YYYY/MM/edm/ssdl （其中 YYYY 和 MM 表示年和月分别） 是为 SSDL 保留。 自定义元素和特性不能位于具有此格式的命名空间中。
 
 ### <a name="applicable-attributes"></a>适用的特性
 

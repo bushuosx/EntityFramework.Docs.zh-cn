@@ -1,20 +1,14 @@
 ---
 title: 连接管理-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: ecaa5a27-b19e-4bf9-8142-a3fb00642270
-caps.latest.revision: 3
-ms.openlocfilehash: 9588ef85435d3c0218defdc098f1e7150fb7ef72
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: a6352bbbc38c38bd5f30536736ec969056df2c7d
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "39120557"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489331"
 ---
 # <a name="connection-management"></a>连接管理
 此页介绍实体框架的行为将连接传递给上下文和功能方面**Database.Connection.Open()** API。  

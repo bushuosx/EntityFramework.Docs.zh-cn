@@ -1,20 +1,14 @@
 ---
 title: 异步查询和保存的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: d56e6f1d-4bd1-4b50-9558-9a30e04a8ec3
-caps.latest.revision: 3
-ms.openlocfilehash: 655676029b3a4e42bbe257ff6091179930b1814e
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: 4ed4f5c13341f33ccff8325a5ddacd8f7b195a76
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120457"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46283818"
 ---
 # <a name="async-query-and-save"></a>异步查询和保存
 > [!NOTE]
@@ -34,7 +28,7 @@ EF6 引入了异步查询和保存使用的支持[async 和 await 关键字](htt
 
 下面是一些更多资源，以了解异步：
 
--   [Brandon Bray 的 async/await.NET 4.5 中的概述](http://blogs.msdn.com/b/dotnet/archive/2012/04/03/async-in-4-5-worth-the-await.aspx)
+-   [Brandon Bray 的 async/await.NET 4.5 中的概述](https://blogs.msdn.com/b/dotnet/archive/2012/04/03/async-in-4-5-worth-the-await.aspx)
 -   [异步编程](https://msdn.microsoft.com/library/hh191443.aspx)MSDN Library 中的页
 -   [如何生成 ASP.NET Web 应用程序使用 Async](http://channel9.msdn.com/events/teched/northamerica/2013/dev-b337) （包括提高的服务器的吞吐量的演示）
 
@@ -151,7 +145,7 @@ EF6 引入了异步查询和保存使用的支持[async 和 await 关键字](htt
 4.  查询返回，而结果将写入到**控制台**
 5.  一天中的引号写入到**控制台**
 
-![SyncOutput](~/ef6/media/syncoutput.png) 
+![同步输出](~/ef6/media/syncoutput.png) 
 
  
 
@@ -233,7 +227,7 @@ EF6 引入了异步查询和保存使用的支持[async 和 await 关键字](htt
 4.  所有查询**博客**发送到数据库*同样，托管的线程是免费的数据库中处理查询时执行其他工作。由于所有其他执行完成后，该线程将只需暂停等待调用不过。*
 5.  查询返回，而结果将写入到**控制台**
 
-![AsyncOutput](~/ef6/media/asyncoutput.png) 
+![异步输出](~/ef6/media/asyncoutput.png) 
 
  
 

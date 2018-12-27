@@ -1,20 +1,14 @@
 ---
 title: 自定义代码优先约定-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: dd2bdbd9-ae9e-470a-aeb8-d0ba160499b7
-caps.latest.revision: 3
-ms.openlocfilehash: 24d6f1bd5eb2ff8be59b9eedd1c4156709fa42fb
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: cfd7f7cad532dca5227793c04d7d91e977ea5e4e
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120484"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489839"
 ---
 # <a name="custom-code-first-conventions"></a>自定义代码优先约定
 > [!NOTE]
@@ -121,7 +115,7 @@ IsKey 方法的一个有趣功能是，它是累加性。 这意味着，如果�
 
 此代码将在模型 int 键列和字符串名称列组成的复合键中配置的类型。 如果我们查看模型设计器中它将如下所示：
 
-![compositeKey](~/ef6/media/compositekey.png)
+![复合键](~/ef6/media/compositekey.png)
 
 属性约定的另一个示例是我要映射到 SQL Server 中而不是日期时间的 datetime2 类型的模型中配置所有日期时间属性。 您可以使用以下实现此目的：
 
@@ -298,7 +292,7 @@ ToTable 的另一个重要方面是，如果显式将类型映射到给定的表
 
 上面的代码将映射到类似于下面的表结构：
 
-![tptExample](~/ef6/media/tptexample.jpg)
+![tpt 示例](~/ef6/media/tptexample.jpg)
 
 可以避免此问题，同时保持几种方法中的默认 TPH 映射：
 

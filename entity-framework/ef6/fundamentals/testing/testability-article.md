@@ -1,20 +1,14 @@
 ---
 title: 可测试性和 Entity Framework 4.0
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 9430e2ab-261c-4e8e-8545-2ebc52d7a247
-caps.latest.revision: 3
-ms.openlocfilehash: 61773f8a23ff54ddb78aeeb5656c669b12f91478
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: aec177438004fd255bef85a5e5047cf6b5a6f782
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120364"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46284039"
 ---
 # <a name="testability-and-entity-framework-40"></a>可测试性和 Entity Framework 4.0
 Scott Allen
@@ -200,13 +194,13 @@ Fowler 使用名称延迟加载来描述"一个对象不包含的所有数据，
 
 使用就地 Poco 我们可以创建实体数据模型 (EDM) 在 Visual Studio 中 （请参阅图 1）。 我们不会使用 EDM 来为实体生成代码。 相反，我们想要使用我们 lovingly 手动创建的实体。 我们仅将使用 EDM 生成数据库架构，并提供 EF4 需要将对象映射到数据库的元数据。
 
-![eftest_01](~/ef6/media/eftest-01.jpg)
+![ef test_01](~/ef6/media/eftest-01.jpg)
 
 **图 1**
 
-注意： 如果你想要首先开发的 EDM 模型，就可以以干净的生成 POCO 代码从 EDM。 可以使用数据可编程性团队提供的 Visual Studio 2010 扩展来执行此操作。 若要下载该扩展，启动 Visual Studio 中的工具菜单中的扩展管理器，并搜索"POCO"（请参阅图 2） 的模板的联机库。 有几个 POCO 模板可用于 EF。 有关使用模板的详细信息，请参阅"[演练： POCO 实体框架的模板](http://blogs.msdn.com/adonet/pages/walkthrough-poco-template-for-the-entity-framework.aspx)"。
+注意： 如果你想要首先开发的 EDM 模型，就可以以干净的生成 POCO 代码从 EDM。 可以使用数据可编程性团队提供的 Visual Studio 2010 扩展来执行此操作。 若要下载该扩展，启动 Visual Studio 中的工具菜单中的扩展管理器，并搜索"POCO"（请参阅图 2） 的模板的联机库。 有几个 POCO 模板可用于 EF。 有关使用模板的详细信息，请参阅"[演练： POCO 实体框架的模板](https://blogs.msdn.com/adonet/pages/walkthrough-poco-template-for-the-entity-framework.aspx)"。
 
-![eftest_02](~/ef6/media/eftest-02.png)
+![ef test_02](~/ef6/media/eftest-02.png)
 
 **图 2**
 
@@ -421,13 +415,13 @@ IObjectSet&lt;T&gt;符合要求的存储库，因为它类似于对象的集合 
 
 我们可以使用 EmployeeControllerTestBase 作为基类的几个测试装置 （见图 3）。 每个测试固定例程将测试的特定控制器操作。 例如，一个测试固定例程将重点介绍测试期间 HTTP GET 请求 （若要显示用于创建员工视图），使用创建操作和不同装置将重点介绍使用 HTTP POST 请求中的创建操作 (才能提交的信息要为用户创建员工）。 每个派生的类只是负责在其特定上下文中，并提供验证其特定的测试上下文的结果所需的断言所需的设置。
 
-![eftest_03](~/ef6/media/eftest-03.png)
+![ef test_03](~/ef6/media/eftest-03.png)
 
 **图 3**
 
 此处提供的命名约定和测试样式不是必需的可测试代码，它是一种方法。 图 4 显示了在 Jet 大脑 Resharper 中运行的测试用于 Visual Studio 2010 的测试运行程序插件。
 
-![eftest_04](~/ef6/media/eftest-04.png)
+![ef test_04](~/ef6/media/eftest-04.png)
 
 **图 4**
 
@@ -970,17 +964,17 @@ IEntity 无法被视为小型违规持久性无感知的因为我们实体都必
 -   Robert C.Martin"[单一责任原则](http://www.objectmentor.com/resources/articles/srp.pdf)"
 -   Martin Fowler[模式目录](http://www.martinfowler.com/eaaCatalog/index.html)从*的企业应用程序体系结构模式*
 -   Griffin Caprio"[依赖关系注入](https://msdn.microsoft.com/magazine/cc163739.aspx)"
--   数据可编程性博客"[演练： 测试驱动开发使用 Entity Framework 4.0](http://blogs.msdn.com/adonet/pages/walkthrough-test-driven-development-with-the-entity-framework-4-0.aspx)"。
--   数据可编程性博客"[结合使用 Entity Framework 4.0 使用存储库和工作单元模式](http://blogs.msdn.com/adonet/archive/2009/06/16/using-repository-and-unit-of-work-patterns-with-entity-framework-4-0.aspx)"
+-   数据可编程性博客"[演练： 测试驱动开发使用 Entity Framework 4.0](https://blogs.msdn.com/adonet/pages/walkthrough-test-driven-development-with-the-entity-framework-4-0.aspx)"。
+-   数据可编程性博客"[结合使用 Entity Framework 4.0 使用存储库和工作单元模式](https://blogs.msdn.com/adonet/archive/2009/06/16/using-repository-and-unit-of-work-patterns-with-entity-framework-4-0.aspx)"
 -   Dave Astels" [BDD 简介](http://blog.daveastels.com/files/BDD_Intro.pdf)"
 -   Aaron Jensen"[简介机规范](http://codebetter.com/blogs/aaron.jensen/archive/2008/05/08/introducing-machine-specifications-or-mspec-for-short.aspx)"
--   Eric Lee"[使用 MSTest BDD](http://blogs.msdn.com/elee/archive/2009/01/20/bdd-with-mstest.aspx)"
+-   Eric Lee"[使用 MSTest BDD](https://blogs.msdn.com/elee/archive/2009/01/20/bdd-with-mstest.aspx)"
 -   Eric Evans"[域驱动设计](http://books.google.com/books?id=7dlaMs0SECsC&printsec=frontcover&dq=evans%20domain%20driven%20design&hl=en&ei=cHztS6C8KIaglAfA_dS1CA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA)"
 -   Martin Fowler" [Mock 不是存根](http://martinfowler.com/articles/mocksArentStubs.html)"
 -   Martin Fowler"[测试双](http://martinfowler.com/bliki/TestDouble.html)"
 -   Jeremy Miller"[状态和交互测试](http://codebetter.com/blogs/jeremy.miller/articles/129544.aspx)"
--   Moq， \<http://code.google.com/p/moq/>
+-   [Moq](http://code.google.com/p/moq/)
 
 ### <a name="biography"></a>作者简介
 
-Scott Allen 是 Pluralsight 技术团队的成员和 OdeToCode.com 的创始人。 在 15 年的商业软件开发中，Scott 曾解决方案从 8 位到高度可扩展的 ASP.NET web 应用程序的嵌入式设备的一切事项。 您可以在他的博客上是 OdeToCode，或在 Twitter 上通过 Scott \< http://twitter.com/OdeToCode>。
+Scott Allen 是 Pluralsight 技术团队的成员和 OdeToCode.com 的创始人。 在 15 年的商业软件开发中，Scott 曾解决方案从 8 位到高度可扩展的 ASP.NET web 应用程序的嵌入式设备的一切事项。 您可以在他的博客上是 OdeToCode，或在 Twitter 上通过 Scott [ http://twitter.com/OdeToCode ](http://twitter.com/OdeToCode)。

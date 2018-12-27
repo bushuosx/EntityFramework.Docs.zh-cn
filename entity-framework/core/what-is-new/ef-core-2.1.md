@@ -1,17 +1,15 @@
 ---
 title: EF Core 2.1 中的新增功能 - EF Core
 author: divega
-ms.author: divega
-ms.date: 2/20/2018
+ms.date: 02/20/2018
 ms.assetid: 585F90A3-4D5A-4DD1-92D8-5243B14E0FEC
-ms.technology: entity-framework-core
 uid: core/what-is-new/ef-core-2.1
-ms.openlocfilehash: 660e2a9787b0a6d2544da785827caa20d51626c1
-ms.sourcegitcommit: 00cb52625b57c1ea339ded1454179fe89b6bcfea
+ms.openlocfilehash: f67f2e695d269e2dde11d396f9a67fd137600f56
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39067555"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489396"
 ---
 # <a name="new-features-in-ef-core-21"></a>EF Core 2.1 中的新增功能
 

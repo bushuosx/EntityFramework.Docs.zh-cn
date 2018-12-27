@@ -1,20 +1,14 @@
 ---
 title: Entity Framework 博客 — EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: f8fcfb34-35de-4e82-b419-8f99fd2eb92a
-caps.latest.revision: 4
-ms.openlocfilehash: b90a42f2ecc47d41577691d969d3173945b4afef
-ms.sourcegitcommit: 390f3a37bc55105ed7cc5b0e0925b7f9c9e80ba6
+ms.openlocfilehash: 49cf475a68967583410a3a4b442f974f41cdcaa4
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "39120480"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490074"
 ---
 # <a name="entity-framework-blogs"></a>Entity Framework 博客
 除了产品文档中，这些博客可以是实体框架的有用信息的源：

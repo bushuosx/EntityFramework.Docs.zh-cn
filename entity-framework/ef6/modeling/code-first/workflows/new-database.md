@@ -1,36 +1,30 @@
 ---
 title: 到新的数据库的 EF6 代码优先
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 2df6cb0a-7d8b-4e28-9d05-e2b9a90125af
-caps.latest.revision: 3
-ms.openlocfilehash: 75057fc73b082f4c745171ed77cddc358229a130
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: a19db575b685cde98509fff4a0efaf26106b26bc
+ms.sourcegitcommit: 269c8a1a457a9ad27b4026c22c4b1a76991fb360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119987"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46284117"
 ---
 # <a name="code-first-to-a-new-database"></a>代码优先的新数据库
-此视频和分步演练会提供针对新数据库 Code First 开发的简介。 此方案包括目标不存在的数据库和 Code First 将创建，或 Code First 将添加新的空数据库表过。 代码首先允许你定义使用 C 模型\#或 VB.Net 类。 （可选） 可以使用特性在类和属性，或使用 fluent API 执行其他配置。
+此视频和分步演练会提供针对新数据库 Code First 开发的简介。 此方案包括目标不存在的数据库和 Code First 将创建，或一个空数据库，Code First 将添加到新表。 代码首先允许你定义使用 C 模型\#或 VB.Net 类。 （可选） 可以使用特性在类和属性，或使用 fluent API 执行其他配置。
 
 ## <a name="watch-the-video"></a>观看视频
-此视频提供了针对新数据库 Code First 开发的简介。 此方案包括目标不存在的数据库和 Code First 将创建，或 Code First 将添加新的空数据库表过。 代码首先允许你定义使用 C# 或 VB.Net 类模型。 （可选） 可以使用特性在类和属性，或使用 fluent API 执行其他配置。
+此视频提供了针对新数据库 Code First 开发的简介。 此方案包括目标不存在的数据库和 Code First 将创建，或一个空数据库，Code First 将添加到新表。 代码首先允许你定义使用 C# 或 VB.Net 类模型。 （可选） 可以使用特性在类和属性，或使用 fluent API 执行其他配置。
 
 **主讲人**：[Rowan Miller](http://romiller.com/)
 
-**视频**: [WMV](http://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-winvideo-CodeFirstNewDatabase.wmv) | [MP4](http://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-mp4Video-CodeFirstNewDatabase.m4v) | [WMV (ZIP)](http://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-winvideo-CodeFirstNewDatabase.zip)
+**视频**: [WMV](https://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-winvideo-CodeFirstNewDatabase.wmv) | [MP4](https://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-mp4Video-CodeFirstNewDatabase.m4v) | [WMV (ZIP)](https://download.microsoft.com/download/B/A/5/BA57BADE-D558-4693-8F82-29E64E4084AB/HDI-ITPro-MSDN-winvideo-CodeFirstNewDatabase.zip)
 
-# <a name="pre-requisites"></a>系统必备组件
+## <a name="pre-requisites"></a>系统必备组件
 
 将需要安装最低版本为 Visual Studio 2010 或 Visual Studio 2012 安装来完成本演练。
 
-如果使用 Visual Studio 2010，您还需要具有[NuGet](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)安装。
+如果使用 Visual Studio 2010，您还需要具有[NuGet](https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)安装。
 
 ## <a name="1-create-the-application"></a>1.创建应用程序
 
@@ -77,7 +71,7 @@ public class Post
 我们现在已经开始使用实体框架中的类型，因此我们需要添加 EntityFramework NuGet 包。
 
 -   **项目 –&gt;管理 NuGet 包...**
-    注意： 如果你没有**管理 NuGet 包...** 应安装的选项[最新版本的 NuGet](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)
+    注意： 如果你没有**管理 NuGet 包...** 应安装的选项[最新版本的 NuGet](https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)
 -   选择**Online**选项卡
 -   选择**EntityFramework**包
 -   单击**安装**
@@ -205,13 +199,13 @@ Press any key to exit...
 -   右键单击**数据连接**，然后选择**添加连接...**
 -   如果你尚未连接到数据库服务器资源管理器之前将需要选择 Microsoft SQL Server 作为数据源
 
-    ![SelectDataSource](~/ef6/media/selectdatasource.png)
+    ![选择数据源](~/ef6/media/selectdatasource.png)
 
 -   连接到 LocalDB 或 SQL Express，具体取决于哪一个已安装
 
 我们现在可以检查 Code First 创建的架构。
 
-![SchemaInitial](~/ef6/media/schemainitial.png)
+![架构初始](~/ef6/media/schemainitial.png)
 
 DbContext 计算出来以查看我们定义的 DbSet 属性包含在模型中哪些类。 然后使用默认组 Code First 约定来确定表和列的名称，确定数据类型，查找主键，等等。 在本演练后面将介绍如何重写这些约定。
 
@@ -272,7 +266,7 @@ namespace CodeFirstNewDatabaseSample.Migrations
 
 新的 Url 列现在添加到数据库中的 Blogs 表：
 
-![SchemaWithUrl](~/ef6/media/schemawithurl.png)
+![使用 Url 的架构](~/ef6/media/schemawithurl.png)
 
 ## <a name="6-data-annotations"></a>6.数据注释
 
@@ -322,7 +316,7 @@ public class User
 
 现在，新表已添加到数据库：
 
-![SchemaWithUsers](~/ef6/media/schemawithusers.png)
+![与用户的架构](~/ef6/media/schemawithusers.png)
 
 是由 EF 支持注释的完整列表：
 
@@ -371,7 +365,7 @@ public class BloggingContext : DbContext
 
 DisplayName 列现在重命名以显示\_名称：
 
-![SchemaWithDisplayNameRenamed](~/ef6/media/schemawithdisplaynamerenamed.png)
+![重命名的显示名称的架构](~/ef6/media/schemawithdisplaynamerenamed.png)
 
 ## <a name="summary"></a>总结
 

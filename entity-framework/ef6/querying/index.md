@@ -1,20 +1,14 @@
 ---
 title: 查询和查找实体 - EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: 65bb3db2-2226-44af-8864-caa575cf1b46
-caps.latest.revision: 3
-ms.openlocfilehash: 92467e1a93f576eca627cf7b7d2351054a882c2c
-ms.sourcegitcommit: 00cb52625b57c1ea339ded1454179fe89b6bcfea
+ms.openlocfilehash: 29a86817e250a2f53ecaa73e8fa4bf93452f0497
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39067542"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45489786"
 ---
 # <a name="querying-and-finding-entities"></a>查询和查找实体
 本主题介绍使用实体框架查询数据的各种方法，包括 LINQ 和 Find 方法。 本主题所介绍的方法同样适用于查询使用 Code First 和 EF 设计器创建的模型。  

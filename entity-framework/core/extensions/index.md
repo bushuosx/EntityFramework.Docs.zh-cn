@@ -1,17 +1,15 @@
 ---
 title: 工具和扩展 - EF Core
 author: ErikEJ
-ms.author: divega
-ms.date: 7/3/2018
+ms.date: 07/03/2018
 ms.assetid: 14fffb6c-a687-4881-a094-af4a1359a296
-ms.technology: entity-framework-core
 uid: core/extensions/index
-ms.openlocfilehash: 6c8cb3e0d8552f274118e4020b7e2e8009af7e11
-ms.sourcegitcommit: fc68321c211aca38f7b9dc3a75677c6ca1b2524b
+ms.openlocfilehash: 67eae6cb943b974cc9cd581b8054836d2e37b1e9
+ms.sourcegitcommit: a6082a2caee62029f101eb1000656966195cd6ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29769434"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181989"
 ---
 # <a name="ef-core-tools--extensions"></a>EF Core 工具和扩展
 
@@ -39,6 +37,25 @@ Devart Entity Developer 是一种用于 ADO.NET 实体框架、NHibernate、Linq
 Visual Studio 2017 及以上版本扩展。 可从现有数据库或 SQL Server 数据库项目反向 DbContext 和 POCO 类的工程，并采用各种方式可视化和检查 DbContext。
 
 [GitHub wiki](https://github.com/ErikEJ/SqlCeToolbox/wiki/EF-Core-Power-Tools)
+
+### <a name="entity-framework-visual-editor"></a>实体框架可视化编辑器
+
+Visual Studio 2017 扩展，可增添 ORM 设计器，用于 Entity Framework 6、Core 2.0 和 Core 2.1 类的可视化设计。 使用 T4 模板生成代码，因此可完全自定义以满足任何需求。 支持继承、单向和双向关联，还支持枚举、用颜色标识类、添加文本块以阐释设计的潜在不可预测部分。
+
+[市场](https://marketplace.visualstudio.com/items?itemName=michaelsawczyn.EFDesigner)
+
+### <a name="catfactory"></a>CatFactory
+
+CatFactory 是适用于 .NET Core 和 Entity Framework Core 的基架引擎。 CatFactory 背后的概念是从 SQL Server 实例导出现有数据库，然后是模型中数据库的表示形式、基架实体、配置和存储库等。
+
+[GitHub 存储库](https://github.com/hherzl/CatFactory.EntityFrameworkCore)
+
+### <a name="loresofts-entity-framework-core-generator"></a>LoreSoft 的 Entity Framework Core 生成器
+
+Entity Framework Core 生成器 (efg) 是可用于从现有数据库中生成 EF Core 模型的 .NET Core CLI 工具，与 `dotnet ef dbcontext scaffold` 很相像。 但它的不同之处在于它还支持安全代码[重新生成](https://efg.loresoft.com/en/latest/regeneration/)。 重新生成通过区域替换或分析映射文件来完成。 该工具还支持生成视图模型、验证和对象映射器代码。 有关详细信息，请参阅教程和产品文档链接。
+
+[教程](http://www.loresoft.com/Generate-ASP-NET-Web-API)
+[文档](https://efg.loresoft.com/en/latest/)
 
 ## <a name="extensions"></a>扩展
 
@@ -131,3 +148,9 @@ EF Core 1.1 延迟加载
 用于批量操作（插入、更新、删除）的 EntityFrameworkCore 扩展。
 
 [GitHub 存储库](https://github.com/borisdj/EFCore.BulkExtensions)
+
+### <a name="bricelamentityframeworkcorepluralizer"></a>Bricelam.EntityFrameworkCore.Pluralizer
+
+将设计时复数形式添加到 EF Core。
+
+[GitHub 存储库](https://github.com/bricelam/EFCore.Pluralizer)

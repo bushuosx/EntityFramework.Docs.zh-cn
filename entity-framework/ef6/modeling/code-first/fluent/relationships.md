@@ -1,20 +1,14 @@
 ---
 title: Fluent API 的关系-EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: fd73b4f8-16d5-40f1-9640-885ceafe67a1
-caps.latest.revision: 3
-ms.openlocfilehash: 7437b395fbed07dcb8c93cd8418317611e14a60b
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: 05f282c02699f8bf3c71197ac5e01000f1855917
+ms.sourcegitcommit: 2b787009fd5be5627f1189ee396e708cd130e07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39120071"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45490462"
 ---
 # <a name="fluent-api---relationships"></a>Fluent API 的关系
 > [!NOTE]

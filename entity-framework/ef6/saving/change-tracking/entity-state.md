@@ -1,20 +1,14 @@
 ---
 title: 使用实体状态的 EF6
 author: divega
-ms.date: 2016-10-23
-ms.prod: entity-framework
-ms.author: divega
-ms.manager: avickers
-ms.technology: entity-framework-6
-ms.topic: article
+ms.date: 10/23/2016
 ms.assetid: acb27f46-3f3a-4179-874a-d6bea5d7120c
-caps.latest.revision: 3
-ms.openlocfilehash: e27d70dd7a6a63c2b225e9cf4fe7ac8cc280d4ca
-ms.sourcegitcommit: f05e7b62584cf228f17390bb086a61d505712e1b
+ms.openlocfilehash: ef0e8d5a5a9d66adab7046088c49d8cd472edc8a
+ms.sourcegitcommit: e5f9ca4aa41e64141fa63a1e5fcf4d4775d67d24
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "39119973"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52899647"
 ---
 # <a name="working-with-entity-states"></a>使用实体状态
 本主题将介绍如何添加和将实体附加到上下文和实体框架如何处理这些在 SaveChanges 期间。
@@ -77,7 +71,6 @@ using (var context = new BloggingContext())
     blog.Owner = new User { UserName = "johndoe1987" };
 
     // Add a new Post by adding to the collection of a tracked Blog
-    var blog = context.Blogs.Find(2);
     blog.Posts.Add(new Post { Name = "How to Add Entities" });
 
     context.SaveChanges();

@@ -1,50 +1,23 @@
 ---
-title: 简要概述 - EF Core
+title: 概述 - EF Core
 author: rowanmiller
-ms.author: divega
 ms.date: 10/27/2016
 ms.assetid: bc2a2676-bc46-493f-bf49-e3cc97994d57
-ms.technology: entity-framework-core
 uid: core/index
-ms.openlocfilehash: 103e5e069687950a8411f2d92c7b5a191844e0ae
-ms.sourcegitcommit: bdd06c9a591ba5e6d6a3ec046c80de98f598f3f3
+ms.openlocfilehash: ee3fac9e9103749195886a632fbeac3163a46689
+ms.sourcegitcommit: 0d36e8ff0892b7f034b765b15e041f375f88579a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948985"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44250531"
 ---
-# <a name="entity-framework-core-quick-overview"></a>Entity Framework Core 快速概览
+# <a name="entity-framework-core"></a>Entity Framework Core
 
 Entity Framework (EF) Core 是轻量化、可扩展和跨平台版的常用 Entity Framework 数据访问技术。
 
 EF Core 可用作对象关系映射程序 (O/RM)，以便于 .NET 开发人员能够使用 .NET 对象来处理数据库，这样就不必经常编写大部分数据访问代码了。
 
 EF Core 支持多个数据库引擎，请参阅[数据库提供程序](providers/index.md)了解详细信息。
-
-如果希望通过编写代码进行了解，建议你阅读其中一篇[入门](get-started/index.md)指南以开始使用 EF Core。
-
-## <a name="what-is-new-in-ef-core"></a>EF Core 中的新增功能
-
-如果已熟悉 EF Core 并希望直接了解新版本的详细信息，请参阅：
-
-- **[EF Core 2.1中的新增功能](xref:core/what-is-new/ef-core-2.1)**
-- **[将现有应用程序升级至 EF Core 2.x](xref:core/miscellaneous/1x-2x-upgrade)**
-
-
-## <a name="get-entity-framework-core"></a>获取 Entity Framework Core
-
-针对要使用的数据库提供程序，[安装 NuGet 包](https://docs.nuget.org/ndocs/quickstart/use-a-package)。 例如，要在跨平台开发中安装 SQL Server 提供程序，请在命令行中使用 `dotnet` 工具：
-
-``` Console
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-```
-
-或者在 Visual Studio 中，使用包管理器控制台：
-
-``` PowerShell
-Install-Package Microsoft.EntityFrameworkCore.SqlServer
-```
-有关可用提供程序的信息，请参阅[数据库提供程序](providers/index.md)；有关更多详细的安装步骤，请参阅[安装 EF Core](get-started/install/index.md)。
 
 ## <a name="the-model"></a>模型
 
@@ -115,3 +88,8 @@ using (var db = new BloggingContext())
     db.SaveChanges();
 }
 ```
+
+## <a name="next-steps"></a>后续步骤
+
+有关介绍性教程，请参阅 [Entity Framework Core 入门](get-started/index.md)。
+
